@@ -77,4 +77,61 @@
         setInterval(nextSlide, 2000);
     })
 
-    //Al click numeri, copmare l'immagine corrispondente
+    //Al click numeri, compare l'immagine corrispondente 1:
+    $('i.fas.fa-dice-one').click(slideOne);
+
+        function slideOne() {
+                var imgAdesso = $('.images img.active'); // Rimuovo l'active
+                var imgTre = $('.images #one');
+
+                imgAdesso.removeClass('active');
+                imgTre.addClass('active');
+                clearInterval(timerId);
+            }
+    //Al click numeri, compare l'immagine corrispondente 2:
+    $('i.fas.fa-dice-two').click(slideTwo);
+
+        function slideTwo() {
+                var imgAdesso = $('.images img.active'); // Rimuovo l'active
+                var imgTre = $('.images #two');
+
+                imgAdesso.removeClass('active');
+                imgTre.addClass('active');
+                clearInterval(timerId);
+            }
+
+    //Al click numeri, compare l'immagine corrispondente 3:
+    $('i.fas.fa-dice-three').click(slideThree);
+
+        function slideThree() {
+                var imgAdesso = $('.images img.active'); // Rimuovo l'active
+                var imgTre = $('.images #three');
+
+                imgAdesso.removeClass('active');
+                imgTre.addClass('active');
+                clearInterval(timerId);
+            }
+
+    //Al click numeri, compare l'immagine corrispondente 4:
+    $('i.fas.fa-dice-four').click(slideFour);
+
+        function slideFour() {
+                var imgAdesso = $('.images img.active'); // Rimuovo l'active
+                var imgTre = $('.images #four');
+
+                imgAdesso.removeClass('active');
+                imgTre.addClass('active');
+                clearInterval(timerId);
+            }
+
+    //Al click numeri, compare l'immagine corrispondente 3:
+    $('i.fas.fa-dice-five').click(slideFive);
+
+        function slideFive() {
+                var imgAdesso = $('.images img.active'); // Rimuovo l'active
+                var imgTre = $('.images #five');
+
+                imgAdesso.removeClass('active');
+                imgTre.addClass('active');
+                clearInterval(timerId);
+            }
