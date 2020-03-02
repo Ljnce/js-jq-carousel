@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Slideshow</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"/>
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="slideshow">
+                <div class="prev">
+                    <i class="fas fa-angle-left"></i>
+                </div>
+                <div class="images">
+                    <img id="one"class="active first" src="https://images.unsplash.com/photo-1527459021842-4f8ca3775867?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80" alt="">
+                    <img id="two"src="https://images.unsplash.com/photo-1558573067-ecb14d627a1c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1949&q=80" alt="">
+                    <img id="three"src="https://images.unsplash.com/photo-1489244094604-1758de9a6728?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1947&q=80" alt="">
+                    <img id="four"src="https://images.unsplash.com/photo-1504025468847-0e438279542c?ixlib=rb-1.2.1&auto=format&fit=crop&w=2035&q=80" alt="">
+                    <img id="five"class="after last" src="https://images.unsplash.com/photo-1452626038306-9aae5e071dd3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1953&q=80" alt="">
+                </div>
+                <div class="next">
+                    <i class="fas fa-angle-right"></i>
+                </div>
+
+                <div class="click-play">
+                    <button class="bottone-play">PLAY &#9193;</button>
+                </div>
+
+                <div class="slider-nav">
+                    <i class="fas fa-circle active first"></i>
+                    <i class="fas fa-circle"></i>
+                    <i class="fas fa-circle"></i>
+                    <i class="fas fa-circle"></i>
+                    <i class="fas fa-circle last"></i>
+                </div>
+
+                <div class="click-stop">
+                    <button class="bottone-stop">STOP &#9726;</button>
+                </div>
+                <div class="img-menu">
+                    <i class="fas fa-dice-one"></i>
+                    <i class="fas fa-dice-two"></i>
+                    <i class="fas fa-dice-three"></i>
+                    <i class="fas fa-dice-four"></i>
+                    <i class="fas fa-dice-five"></i>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="js/main.js" charset="utf-8"></script>
+    </body>
+</html>
