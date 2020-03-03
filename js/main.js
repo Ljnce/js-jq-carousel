@@ -3,7 +3,7 @@
 
 
     // Definisco le funzioni nextImage e prevImage
-    function nextSlide() {
+    function nextSlide(){
         if ( $('.images img.active').hasClass('last') ) {
 
             $('.images img.active').removeClass('active');
@@ -124,7 +124,7 @@
                 clearInterval(timerId);
             }
 
-    //Al click numeri, compare l'immagine corrispondente 3:
+    //Al click numeri, compare l'immagine corrispondente 5:
     $('i.fas.fa-dice-five').click(slideFive);
 
         function slideFive() {
@@ -135,3 +135,27 @@
                 imgTre.addClass('active');
                 clearInterval(timerId);
             }
+
+    //Exit lampeggiante:
+    var lampeggia = setInterval(slideLampeggia, 500);
+
+
+    function slideLampeggia(){
+        if ( $('.exit img.active').hasClass('last') ) {
+
+            $('.exit img.active').removeClass('active');
+            $('.exit img.first').addClass('active');
+
+        } else {
+            var imgExit = $('.exit img.active'); // Rimuovo l'active
+            var proxImg = $('.exit img.active').next();
+
+            imgExit.removeClass('active');
+            proxImg.addClass('active');
+        }
+    }
+
+    //Closed:
+    $('.exit img').click(function(){
+        ('#closed').slideDown('slow');
+    })

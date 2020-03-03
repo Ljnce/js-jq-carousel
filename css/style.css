@@ -9,7 +9,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ededed;
+    background-image: url('https://png2.kisspng.com/sh/34e7dce6874cbd94d42c1e0931f20ea7/L0KzQYm3U8I3N6p1iZH0aYP2gLBuTfNqdpZyeZ95cnBtdbT7if9vNaRoitduboOwccbrigRwepp6hZ99aHXkhLb5TfRzaaFqRdVybnXwcX68gfI6amMATqoBOUjnQ3AAVcYyPWc7UKMAMkK0QYq6Ucg2PWI4RuJ3Zx==/kisspng-cinema-projection-screens-auditorium-theater-drape-cinema-5ab9b2968698d3.7561566815221193185513.png');
+    background-size: cover;
+}
+
+.closed{
+    display: none;
+    width: 900px;
+    height: calc(900px / 16 * 9);
+    background-color: #75151e;
 }
 
 .slideshow {
@@ -17,6 +25,28 @@
     align-items: center;
     /* Aggiunto per lo slider nav */
     position: relative;
+    margin-bottom: 115px;
+    margin-right: 100px;
+}
+
+
+
+.exit img{
+    width: 100px;
+    object-fit: contain;
+    right: 20px;
+    transform: translateX(-60%);
+    display: none;
+    padding: 0;
+}
+
+.exit img.active {
+    display: block;
+    background-color: yellow;
+}
+
+.exit img.last {
+    background-color: white;
 }
 
 .prev,
@@ -28,9 +58,18 @@
     cursor: pointer;
 }
 
+.prev{
+    padding-left: 50px;
+}
+
+.next{
+    padding-right: 50px;
+}
+
+
 .images {
-    width: 600px;
-    height: calc(600px / 16 * 9);
+    width: 900px;
+    height: calc(900px / 16 * 9);
 }
 
 .images img {
@@ -80,17 +119,10 @@
 
 .img-menu{
     position: absolute;
-    bottom: -50px;
+    bottom: -80px;
     left: 50%;
     transform: translateX(-50%);
     font-size: 30px;
     cursor: pointer;
-}
-
-.view{
-    display: block;
-}
-
-.none{
-    display: none;
+    color: white;
 }
